@@ -15,13 +15,19 @@ RUN yarn build
 
 FROM nginx:stable-alpine
 
+RUN addgroup -S nginxapp && adduser -S -G nginxapp nginxapp
+
 WORKDIR /usr/share/nginx/html
 
 RUN rm -rf ./*
 
 COPY --from=builder /app/dist .
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx-main.conf /etc/nginx/nginx.conf
 
-EXPOSE 80
+RUN mkdir -p /var/cache/nginx /var/log/nginx /run/nginx &&     chown -R nginxapp:nginxapp       /usr/share/nginx/html       /var/cache/nginx       /var/log/nginx       /run/nginx       /etc/nginx
+
+EXPOSE 8080
+
+USER nginxapp
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
