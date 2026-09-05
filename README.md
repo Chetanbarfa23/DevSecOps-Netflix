@@ -62,3 +62,44 @@ Jenkins CI/CD
        |
        v
    Alerting
+
+
+## Project Evidence & Screenshots
+
+The following screenshots demonstrate the major components and security stages of the DevSecOps implementation.
+
+### Application
+
+![Netflix Application](docs/screenshots/netflix-app.jpeg)
+
+### GitHub Repository
+
+![GitHub Repository](docs/screenshots/github.png)
+
+### Jenkins CI/CD Pipeline
+
+![Jenkins Pipeline](docs/screenshots/jenkins-pipeline.png)
+
+### SonarQube Code Quality & Security
+
+![SonarQube](docs/screenshots/sonarqube.png)
+
+### OWASP Dependency-Check
+
+![OWASP Dependency-Check](docs/screenshots/owasp-dependency-check.png)
+
+### Trivy Security Scan
+
+![Trivy Scan](docs/screenshots/trivy-scan.png)
+
+### Argo CD GitOps Deployment
+
+![Argo CD](docs/screenshots/argocd.png)
+
+### Grafana Monitoring Dashboard
+
+![Grafana Dashboard](docs/screenshots/grafana-dashboard.png)
+
+### Prometheus Target Monitoring
+
+![Prometheus Targets](docs/screenshots/prometheus-targets.png)
