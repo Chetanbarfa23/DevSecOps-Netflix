@@ -8,7 +8,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/Chetanbarfa23/DevSecOps-Project.git
+    repoURL: https://github.com/Chetanbarfa23/DevSecOps-Netflix.git
     targetRevision: main
     path: Kubernetes
 
