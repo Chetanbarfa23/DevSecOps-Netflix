@@ -1,2 +1,0 @@
-NAME      	NAMESPACE 	REVISION	UPDATED                                	STATUS  	CHART                       	APP VERSION
-monitoring	monitoring	7       	2026-09-05 12:22:43.444472245 +0000 UTC	deployed	kube-prometheus-stack-89.2.2	v0.93.1    

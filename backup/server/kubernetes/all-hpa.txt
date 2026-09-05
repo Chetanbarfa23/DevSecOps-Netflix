@@ -1,2 +1,0 @@
-NAMESPACE   NAME          REFERENCE            TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
-default     netflix-hpa   Deployment/netflix   cpu: 1%/70%   2         5         2          5h56m

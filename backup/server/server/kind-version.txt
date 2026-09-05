@@ -1,1 +1,0 @@
-kind v0.34.0-alpha+aa74c7f3e55dba go1.26.7 linux/amd64

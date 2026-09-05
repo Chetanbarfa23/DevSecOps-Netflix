@@ -1,8 +1,0 @@
-NAME                 STATUS   AGE
-argocd               Active   5h49m
-default              Active   17h
-kube-node-lease      Active   17h
-kube-public          Active   17h
-kube-system          Active   17h
-local-path-storage   Active   17h
-monitoring           Active   3h43m
