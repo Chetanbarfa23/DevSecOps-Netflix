@@ -10,59 +10,9 @@ The DevSecOps infrastructure, CI/CD workflow, containerization, Kubernetes deplo
 
 ## DevSecOps Architecture
 
-```text
-Developer
-    |
-    v
-GitHub
-    |
-    v
-Jenkins CI/CD
-    |
-    +----> SonarQube
-    |        |
-    |        v
-    |    Code Quality
-    |
-    +----> OWASP Dependency-Check
-    |        |
-    |        v
-    |    Dependency Security
-    |
-    +----> Docker Build
-             |
-             v
-        Trivy Image Scan
-             |
-             v
-        Docker Hub
-             |
-             v
-      GitOps Manifest Update
-             |
-             v
-          GitHub
-             |
-             v
-          Argo CD
-             |
-             v
-      Kubernetes / Kind
-             |
-       +-----+------+
-       |            |
-       v            v
-   Netflix App     HPA
-       |
-       v
- Prometheus
-       |
-       v
-   Grafana
-       |
-       v
-   Alerting
+![Netflix DevSecOps Project Architecture](docs/screenshots/devsecops-project-overview.png)
 
+The diagram presents the complete DevSecOps workflow implemented in this project, from source code and automated CI/CD security validation to containerization, GitOps-based Kubernetes deployment, and continuous monitoring with Prometheus and Grafana.
 
 ## Project Evidence & Screenshots
 
